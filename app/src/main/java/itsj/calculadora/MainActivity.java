@@ -319,6 +319,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             pantalla1.setText(ms+"");
         } else if(evento == R.id.btnMplus){
             ms = ms + Double.parseDouble(pantalla1.getText().toString());
+        } else if(evento == R.id.btnMless){
+            ms = ms - Double.parseDouble(pantalla1.getText().toString());
         }
 
     }
