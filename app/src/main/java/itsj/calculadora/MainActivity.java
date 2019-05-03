@@ -290,6 +290,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             n1 = Double.parseDouble(pantalla1.getText().toString());
             res = 1/n1;
             pantalla1.setText(res+"");
+        } else if(evento == R.id.btnPotencia){
+            n1 = Double.parseDouble(pantalla1.getText().toString());
+            res = Math.pow(n1, 2);
+            pantalla1.setText(res+"");
         }
 
     }
