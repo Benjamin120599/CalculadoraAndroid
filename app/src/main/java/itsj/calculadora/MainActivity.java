@@ -238,6 +238,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             pantalla1.setText("");
             pantalla2.setText(res+"+");
             num = 1;
+        } else if(evento == R.id.btnResta){
+            if(pantalla2.getText().toString().equals("")) {
+                n2=0;
+            } else {
+                n2 = Double.parseDouble(pantalla2.getText().toString());
+            }
+
+            n1 = Double.parseDouble(pantalla1.getText().toString());
+            res = n1 - n2;
+            pantalla1.setText("");
+            pantalla2.setText(res+"-");
+            num = 2;
         }
 
     }
