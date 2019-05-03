@@ -321,6 +321,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             ms = ms + Double.parseDouble(pantalla1.getText().toString());
         } else if(evento == R.id.btnMless){
             ms = ms - Double.parseDouble(pantalla1.getText().toString());
+        } else if(evento == R.id.btnMC){
+            ms = 0;
         }
 
     }
