@@ -201,6 +201,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             ms = 0;
             res = 0.0;
             num = 0;
+        } else if(evento == R.id.btnPunto) {
+            int cont=0;
+            for(int i=0; i < pantalla1.getText().length(); i++) {
+                if(pantalla1.getText().toString().substring(i, i+1).equals(".")) {
+                    cont++;
+                }
+            }
+
+            if(cont==0) {
+                pantalla1.setText(cad+".");
+            }
         }
 
     }
