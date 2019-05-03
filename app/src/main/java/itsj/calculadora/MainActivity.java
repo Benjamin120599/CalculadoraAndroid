@@ -300,6 +300,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             n1 = Double.parseDouble(pantalla1.getText().toString());
             res = Math.sqrt(n1);
             pantalla1.setText(res+"");
+        } else if(evento == R.id.btnMasmenos){
+            n1 = Double.parseDouble(pantalla1.getText().toString());
+            res = n1*(-1);
+            pantalla1.setText(res+"");
         }
 
     }
