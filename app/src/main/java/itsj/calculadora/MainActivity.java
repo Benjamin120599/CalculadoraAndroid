@@ -304,6 +304,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             n1 = Double.parseDouble(pantalla1.getText().toString());
             res = n1*(-1);
             pantalla1.setText(res+"");
+        } else if(evento == R.id.btnBorrar){
+            if(pantalla1.getText().length() == 1) {
+                pantalla1.setText("0");
+            } else {
+                pantalla1.setText(pantalla1.getText().toString().substring(0, pantalla1.getText().length()-1));
+            }
         }
 
     }
