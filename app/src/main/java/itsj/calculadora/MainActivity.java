@@ -189,6 +189,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             } else {
                 pantalla1.setText(cad+"9");
             }
+        } else if(evento == R.id.btnC) {
+            pantalla1.setText("");
+            pantalla2.setText("");
+            ms = 0;
+            res = 0.0;
+            num = 0;
         }
 
     }
