@@ -250,6 +250,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             pantalla1.setText("");
             pantalla2.setText(res+"-");
             num = 2;
+        } else if(evento == R.id.btnMultiplicacion){
+            if(pantalla2.getText().toString().equals("")) {
+                n1=1;
+            } else {
+                n1 = Double.parseDouble(pantalla2.getText().toString());
+            }
+
+            if(pantalla1.getText().toString().equals("")) {
+                n2= 1;
+            } else {
+                n2 = Double.parseDouble(pantalla1.getText().toString());
+            }
+            res = 1;
+            res = res * n2;
+            pantalla1.setText("");
+            pantalla2.setText(res+"x");
+            num = 3;
         }
 
     }
