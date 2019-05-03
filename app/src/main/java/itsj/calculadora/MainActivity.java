@@ -153,6 +153,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             } else {
                 pantalla1.setText(cad+"5");
             }
+        } else if(evento == R.id.btnSeis) {
+            if(pantalla1.getText().equals("0")) {
+                pantalla1.setText("6");
+            } else if(pantalla1.getText().equals("+") || pantalla1.getText().equals("-") || pantalla1.getText().equals("x") || pantalla1.getText().equals("\u00F7")) {
+                cad = "";
+                pantalla1.setText(cad+"6");
+            } else {
+                pantalla1.setText(cad+"6");
+            }
         }
 
     }
