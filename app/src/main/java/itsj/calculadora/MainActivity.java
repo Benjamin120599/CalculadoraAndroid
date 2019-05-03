@@ -286,6 +286,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             pantalla1.setText("");
             pantalla2.setText(res+"/");
             num = 4;
+        } else if(evento == R.id.btnDivisionx){
+            n1 = Double.parseDouble(pantalla1.getText().toString());
+            res = 1/n1;
+            pantalla1.setText(res+"");
         }
 
     }
